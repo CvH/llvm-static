@@ -3,6 +3,11 @@ name: LLVM build
 on:
   workflow_dispatch:
 
+env:
+  CC: clang
+  CXX: clang++
+  MAKE: make
+
 jobs:
   build:
     runs-on: ubuntu-latest
