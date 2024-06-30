@@ -26,7 +26,7 @@ $(LLVM_SOURCE_ARCHIVE):
 # Extract the LLVM project source code to a folder for a release build.
 $(LLVM_RELEASE_DIR): $(LLVM_SOURCE_ARCHIVE)
 	mkdir -p $@
-	tar -xvf $(LLVM_SOURCE_ARCHIVE) --strip-components=1 -C $@
+	tar -xf $(LLVM_SOURCE_ARCHIVE) --strip-components=1 -C $@
 	touch $@
 
 # Configure CMake for the LLVM release build.
