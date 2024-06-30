@@ -17,4 +17,5 @@ jobs:
 
       - name: building
         run: |
+          sudo apt install build-essential -y
           make llvm
